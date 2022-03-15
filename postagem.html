@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<title>Postagem de Produto</title>
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+	<h1>Postagem</h1>
+	<p>Insira os dados do produto</p>
+	<form enctype="multipart/form-data" action="postagem.php" method="post">
+		<div><label for="foto">Coloque 3 fotos do Produto:</label></div>
+		<input type="hidden" name="MAX_FILE_SIZE" value="99999999"/>
+		<div><input name="foto" type="file" id="foto"/></div>
+		<input type="hidden" name="MAX_FILE_SIZE" value="99999999"/>
+		<div><input name="foto" type="file" id="foto"/></div>
+		<input type="hidden" name="MAX_FILE_SIZE" value="99999999"/>
+		<div><input name="foto" type="file" id="foto"/></div>
+		<br>
+
+		<label for="titulo">Titulo do anuncio:</label><br>
+		<input type="text" id="titulo" name="titulo" size="100" Style="padding:20px;">
+		<br>
+		<br>
+
+		<label for="descricao">Descrição do Produto:</label><br>
+		<input type="text" id="descricao" name="descricao" size="150" Style="padding:50px;">
+		<br>
+
+		
+		<h2>Categoria</h2>
+		<BR>
+		<BR>
+		<p>CONSOLES</p>
+		<label for="console">PLAYSTATION</label>
+		<input type="radio" id="playstation" name="console">
+		<br>
+
+		<label for="console">XBOX</label>
+		<input type="radio" id="xbox" name="console">
+		<br>
+
+		<label for="console">NINTENDO</label>
+		<input type="radio" id="nintendo" name="console">
+		<br>
+
+		<label for="console">OUTROS</label>
+		<input type="radio" id="outros" name="console">
+		<br>
+		<br>
+		<p>PC'S/NOTEBOOKS</p>
+
+		<label for="pcnotebook">COMPUTADOR</label>
+		<input type="radio" id="computador" name="pcnotebook">
+		<br>
+		<label for="pcnotebook">NOTEBOOK</label>
+		<input type="radio" id="notebook" name="pcnotebook">
+		<br>
+		<br>
+
+		<p>JOGOS</p>
+
+		<label for="jogos">MIDIA FISICA</label>
+		<input type="radio" id="fisica" name="jogos">
+		<br>
+		<label for="jogos">MIDIA DIGITAL</label>
+		<input type="radio" id="digital" name="jogos">
+		<br>
+		<br>
+
+		<p>ACESSORIOS</p>
+
+		<label for="acessorios">GAMEPAD/JOYSTICK></label>
+		<input type="radio" id="gamepad" name="acessorios">
+		<br>
+		<label for="acessorios">MOUSE GAMER</label>
+		<input type="radio" id="mouse" name="acessorios">
+		<br>
+		<label for="acessorios">TECLADO GAMER</label>
+		<input type="radio" id="teclado" name="acessorios">
+		<br>
+		<label for="acessorios">HEADSET</label>
+		<input type="radio" id="headset" name="acessorios">
+		<br>
+		<label for="acessorios">VOLANTES</label>
+		<input type="radio" id="volantes" name="acessorios">
+		<br>
+		<label for="acessorios">WEBCAM</label>
+		<input type="radio" id="webcam" name="acessorios">
+		<br>
+		<label for="acessorios">MOUSE PAD</label>
+		<input type="radio" id="mousepad" name="acessorios">
+		<br>
+		<label for="acessorios">CAIXA DE SOM</label>
+		<input type="radio" id="som" name="acessorios">
+		<br>
+		<br>
+
+		<p>PERIFERICOS</p>
+
+		<label for="perifericos">PARA COMPUTADORES</label>
+		<input type="radio" id="pcomputador" name="perifericos">
+		<br>
+		<label for="perifericos">CONSOLES</label>
+		<input type="radio" id="pconsoles" name="perifericos">
+		<br>
+		<label for="perifericos">AUDIO E VIDEO</label>
+		<input type="radio" id="audiovideo" name="perifericos">
+		<br>
+		<label for="perifericos">OUTROS</label>
+		<input type="radio" id="poutros" name="perifericos">
+		<br>
+		<br>
+		<br>
+
+
+
+		<div><input type="reset" value="Reset" name="reset"></div>
+		<div><input type="submit" value="Postar"/></div>
+	</form>
+</body>
+
+</html>
+© 2022 playandbuy
